@@ -1,3 +1,12 @@
 {
-  "extends": "@tsconfig/react-native/tsconfig.json"
+  "extends": "@tsconfig/react-native/tsconfig.json",
+  "include": ["components/*.ts", "components/*.tsx"],
+  "exclude": ["node_modules"],
+  "compilerOptions": {
+    "declaration": true,
+    "outDir": "lib",
+    "declarationMap": true,
+    "noEmit": false,
+    "emitDeclarationOnly": true
+  }
 }
